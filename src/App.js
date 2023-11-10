@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ItemCardContainer from "./components/ItemCard/ItemCardContainer";
+import "./index.css";
+import { saveDataToAPI} from "./redux/item-reducer";
+import { useDispatch } from "react-redux";
 
-function App() {
+function App({data, isSaving}) {
+  const dispatch = useDispatch();
+ 
+  const handleSave = () => {
+   
+    const modifiedData = data;
+
+    dispatch(saveDataToAPI(modifiedData));
+    console.log(modifiedData);
+   
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="wrapper-block">
+        <div className="card-container">
+          <ItemCardContainer />
+        </div>
+        <div className="button-block">
+          <button className="button" onClick={handleSave} disabled={isSaving}>Сохранить</button>
+        </div>
+      </div>
     </div>
   );
 }

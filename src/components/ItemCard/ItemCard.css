@@ -1,0 +1,188 @@
+.card {
+    background-color: #fff;
+    border-style: solid;
+    border-color: #c3bdbd;
+    border-radius: 5px;
+    width: 700px;
+    height: 700px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 70px;
+
+}
+
+.card-title {
+    font-size: 21px;
+    color: rgb(3, 3, 92);
+    border-color: #a2a0a0;
+    border-bottom-style: solid;
+    border-radius: 5px 5px 0 0;
+    background: #ADD8E6;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-group {
+    display: flex;
+}
+
+.block-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.groupName-title {
+    color: rgb(3, 3, 92);
+    font-weight: 800;
+    text-align: start;
+}
+
+.textarea {
+    width: 300px;
+    height: 40px;
+    border-color: #a2a0a0;
+    border-radius: 5px;
+    resize: none;
+}
+
+.select-teachers {
+    width: 300px;
+    height: 40px;
+    appearance: none;
+    border-color: #a2a0a0;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 3px;
+}
+
+.icon-book {
+    margin-left: 20px;
+}
+
+.block-add {
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+}
+.img-sort{
+    width: 20px;
+    cursor: pointer;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg);
+}
+
+.title-table {
+    display: flex;
+}
+.img-sort-block{
+    border: 3px solid rgb(3, 3, 92);
+    background-color: rgb(3, 3, 92);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.title-text:nth-child(1) {
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 40px;
+    border-bottom: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(3, 3, 92);
+}
+
+.title-text:nth-child(2) {
+    border: 1px solid #ddd;
+    width: 100px;
+    height: 40px;
+    border-bottom: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(3, 3, 92);
+}
+.teacher-text{
+    color: rgb(3, 3, 92);
+}
+.button-add{
+    cursor: pointer;
+    color: rgb(3, 3, 92);
+    font-size: 18px;
+}
+.button-add:hover{
+    font-size: 25px;
+	color: #3a7999;
+	
+}
+.delete-button{
+    cursor: pointer;
+}
+
+.block-add {
+    border: 1px solid #ddd;
+    width: 400px;
+    height: 40px;
+    border-bottom: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-lect {
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 60px;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-hours {
+    border: 1px solid #ddd;
+    width: 100px;
+    height: 60px;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-select {
+    border: 1px solid #ddd;
+    width: 400px;
+    height: 60px;
+    background-color: #e0f7fa;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+}
+.number{
+    text-align: center;
+}
+.active{
+width: 150px;
+}
+.textadd{
+    width: 800px;
+    justify-content: center;
+}
+.lectadd{
+    width: 285px;
+}
+.hoursadd{
+    width: 95px;
+}
