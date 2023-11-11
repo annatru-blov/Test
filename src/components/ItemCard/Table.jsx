@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import TableA from "./TableA";
 import sort from "./../../img/free-icon-sorting-3489483.png";
 
+
 function Table({ teachers, item, message, message2 }) {
   const dispatch = useDispatch();
   
@@ -136,12 +137,15 @@ function Table({ teachers, item, message, message2 }) {
                  
                 
                 >
+                  
+                 
                   <option value="">Вакансия</option>
                   {teachers.map((teacher) => (
                     <option key={teacher.id} value={teacher.name}>
                       {teacher.name}
                     </option>
                   ))}
+                  
                 </select>
                 <div className="img-sort-block">
                   <img

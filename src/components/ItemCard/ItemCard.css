@@ -66,6 +66,7 @@ table {
     border-radius: 5px;
     text-align: center;
     margin-right: 3px;
+    background: url("/src/img/icon-down.png#element-id") 96% / 5% no-repeat white;
 }
 
 .icon-book {
